@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Software Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/profile_img.jpg" type="image/x-icon">
+<script>$(document).ready(function() {
+    // Smooth scrolling for anchor links in navbar
+    $('a.nav-link').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top - 70 // Adjust scroll offset to account for navbar height
+            }, 1000);
+        }
+    });
+});
+</script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="resume-download">
+            <a href="assets/resume.pdf" download>
+                <i class="fa fa-file-download"></i> Resume/CV
+            </a>
+        </div>
+    </nav>
+    
+
+    <header>
+        <div class="header-container">
+            <img src="assets/profile_img.jpg" alt="Profile Picture">
+            <div class="header-text">
+                <h1>M. Fawad Saqlain</h1>
+                <p>Software Engineer | Web Developer | Data Engineer | Problem Solver</p>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="about" class="about">
+            
+            <h2>About Me</h2>
+            <p>Hi! I'm Fawad Saqlain, a Software Engineering student at <strong>COMSATS University Vehari</strong>.
+                Passionate about solving real-world problems, I thrive on creativity and innovation to bring ideas to
+                life. Let’s connect and create something extraordinary together!</p>
+        </section>
+
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Science in Software Engineering</strong><br>COMSATS University Islamabad Vehari
+                Campus, 2026</p>
+            <p><strong>Intermediate in Premedical</strong><br>Punjab College Vehari, 2022</p>
+            <p><strong>Matric with Biology</strong><br>The Educators School Ghazali Campus Vehari, 2020</p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skills-item">HTML5</div>
+                <div class="skills-item">CSS3</div>
+                <div class="skills-item">Python</div>
+                <div class="skills-item">Django</div>
+                <div class="skills-item">Linux</div>
+                <div class="skills-item">Pandas</div>
+                <div class="skills-item">NumPy</div>
+                <div class="skills-item">Matplotlib</div>
+                <div class="skills-item">Draw.io/MS Visio</div>
+                <div class="skills-item">C++</div>
+                <div class="skills-item">Figma/Adobe XD</div>
+                <div class="skills-item">Canva/Inkscape</div>
+                <div class="skills-item">Git/GitHub</div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="projects-list">
+                <div class="project-item">
+                    <h3>General Store Management System</h3>
+                    <p>A web-based solution developed using MSSQL and Django, designed to streamline inventory, counter,
+                        and administration management.</p>
+                    <a href="https://github.com/FawadSaqlain/DBMS-PROJECT" style="color: #a62a2a;">View on GitHub</a>
+                </div>
+                <div class="project-item">
+                    <h3>Image Classification using MobileNetV2</h3>
+                    <p>pre-trained MobileNetV2 model in TensorFlow to classify images.
+                        Check out how this powerful model, trained on the ImageNet dataset,
+                        identifies objects in various images. This widely used application of
+                        machine learning involves algorithms that analyze digital images by measuring pixel values.
+                    </p>
+                    <a href="#" style="color: #a62a2a;">View on GitHub</a>
+                </div>
+                <div class="project-item">
+                    <h3>Music recomendation system</h3>
+                    <p>Music Recommendation System 🎵. Inspired by platforms like Spotify, this system uses machine
+                        learning
+                        to analyze user habits, preferences, and patterns, delivering a personalized music experience.
+                        It’s amazing
+                        to see how data transforms into tailored playlists, introducing users to new genres and artists.
+                    </p>
+                    <a href="https://github.com/FawadSaqlain/CodeAlpha_Music-Recommendations-Model"
+                        style="color: #a62a2a;">View on GitHub</a>
+                </div>
+                <div class="project-item">
+                    <h3>Amazon sales dataset visualizations</h3>
+                    <p>Explore the power of data-driven decision-making with our latest LinkedIn post! Dive into Python
+                        code
+                        snippets and captivating visualizations dissecting an Amazon sales dataset. From tracking sales
+                        trends over time to dissecting profit margins by category, our analysis delves deep into the
+                        dynamics of online retail.
+                        Discover how we decode quantity sold comparisons, unravel geographical sales patterns, and
+                        pinpoint shipment delays to
+                        empower businesses with actionable insights. By leveraging these findings, companies can
+                        fine-tune inventory management,
+                        refine pricing strategies, and optimize logistics operations for enhanced performance in the
+                        competitive Amazon.com marketplace.
+                        Join us on this journey as we unveil the secrets hidden within the data, paving the way for
+                        informed decisions, strategic growth
+                        opportunities, and sustainable success in the ever-evolving landscape of e-commerce.</p>
+                    <a href="https://github.com/FawadSaqlain/CodeAlpha_Music-Recommendations-Model"
+                        style="color: #a62a2a;">View on GitHub</a>
+                </div>
+                <div class="project-item">
+                    <h3>IMDB dataset visualizations</h3>
+                    <p>The code analyzes a movie dataset (likely IMDB data) using Pandas and Matplotlib in a Google
+                        Colab environment.
+                        It explores various aspects of movies such as average ratings by genre, budget versus gross
+                        revenue, runtime
+                        distribution, and the impact of directors on ratings. Visualizations are created using bar
+                        charts, scatter plots,
+                        and histograms to gain insights from the data. The code also investigates trends over time,
+                        differences between adult
+                        and non-adult films, and correlations between key movie attributes.
+                        Overall, the code performs a comprehensive data exploration and visualization of movie-related
+                        information.</p>
+                    <a href="https://colab.research.google.com/drive/1aG90nbGcY_lie_TV2_sF9V8IjVfqwgAR?usp=sharing"
+                        style="color: #a62a2a;">View on GitHub</a>
+                </div>
+                <div class="project-item">
+                    <h3>Supervised machine learning Algorithms</h3>
+                    <p>Supervised machine learning is a type of artificial intelligence where a model is trained on
+                        labeled data.
+                        This means that the algorithm learns from input-output pairs, where the correct output is
+                        provided during training.
+                        The goal is for the model to make accurate predictions or decisions when given new, unseen data.
+                    </p>
+                    <a href="https://github.com/FawadSaqlain/Supervised-ML-algorithms" style="color: #a62a2a;">View on
+                        GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add this to the head section -->
+        
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <div class="contact-list">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:saqlainfawad@gmail.com">saqlainfawad@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+923228730277">+92-322-8730277</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <a href="https://wa.me/+923228730277">WhatsApp: Chat Now</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/FawadSaqlain">GitHub</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/fawad-saqlain-software-engineer/">LinkedIn</a>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    
+    <footer>
+        <p> &copy; 2024 Fawad Saqlain. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
