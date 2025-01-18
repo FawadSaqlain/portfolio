@@ -74,15 +74,47 @@
         }
 
         .skills-item,
-        .project-item,
+        
         .contact-item {
             background: #222;
             padding: 20px;
             border-radius: 8px;
-            width: 250px;
+            
             text-align: center;
             transition: transform 0.3s;
             animation: popIn 1.5s;
+        }
+
+.project-item{
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+    animation: popIn 1.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space to push the link to the bottom */
+    /* height: 100%; Ensures the height is flexible and fills the container */
+}
+
+.project-item {
+    width: 350px;
+}
+
+.project-description {
+    flex-grow: 1; /* This allows the description to take up remaining space */
+}
+
+
+        .skills-item{
+            width: 200px;
+        }
+        .project-item{
+            width: 350px;
+        }
+        .contact-item{
+            width: 2500px;
         }
 
         .skills-item:hover,
@@ -330,4 +362,37 @@
         width: 100%;
         max-width: 300px;
     }
+}
+
+
+.education-item {
+    margin-bottom: 20px;
+  }
+
+  .education-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .education-item p {
+    margin: 5px 0;
+  }
+
+  .education-item a {
+    color: #a62a2a;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .education-item a:hover {
+    text-decoration: underline;
+  }
+
+  .more-text {
+    display: none;
+}
+.learn-more-btn {
+    color: #a62a2a;
+    cursor: pointer;
 }

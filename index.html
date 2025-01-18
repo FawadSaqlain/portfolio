@@ -48,7 +48,7 @@
               </ul>
             </div>
             <div class="resume-download">
-              <a href="../portfolio/assets/resume.pdf" download>
+              <a href="assets/resume.pdf" download>
                 <i class="fa fa-file-download"></i> Resume/CV
               </a>
             </div>
@@ -84,11 +84,36 @@
 
         <section id="education" class="education">
             <h2>Education</h2>
-            <p><strong>Bachelor of Science in Software Engineering</strong><br>COMSATS University Islamabad Vehari
-                Campus, 2026</p>
-            <p><strong>Intermediate in Premedical</strong><br>Punjab College Vehari, 2022</p>
-            <p><strong>Matric with Biology</strong><br>The Educators School Ghazali Campus Vehari, 2020</p>
-        </section>
+          
+            <div class="education-item">
+              <h3>Bachelor of Science in Software Engineering</h3>
+              <p><strong>Institution:</strong> COMSATS University Islamabad Vehari Campus</p>
+              <p><strong>Duration:</strong> 2022 - 2026</p>
+              <p><strong>Grade:</strong> A (CGPA: 3.8)</p>
+              <!-- <p><strong>Details:</strong> A comprehensive program focused on Software Engineering principles, including software development, databases, and project management.</p> -->
+              <p><a href="path/to/bsc-result.pdf" download>Download Result</a></p>
+            </div>
+          
+            <div class="education-item">
+              <h3>Intermediate in Premedical</h3>
+              <p><strong>Institution:</strong> Punjab College Vehari</p>
+              <p><strong>Duration:</strong> 2020 - 2022</p>
+              <p><strong>Grade:</strong> A+ (80%)</p>
+              <!-- <p><strong>Details:</strong> Focused on subjects like Biology, Chemistry, and Physics to prepare for medical studies.</p> -->
+              <p><a href="path/to/intermediate-result.pdf" download>Download Result</a></p>
+            </div>
+          
+            <div class="education-item">
+              <h3>Matric with Biology</h3>
+              <p><strong>Institution:</strong> The Educators School Ghazali Campus Vehari</p>
+              <p><strong>Duration:</strong> 2018 - 2020</p>
+              <p><strong>Grade:</strong> A (85%)</p>
+              <!-- <p><strong>Details:</strong> Completed high school with a focus on Mathematics, Physice , Chemistry Biology and other essential subjects.</p> -->
+              <p><a href="path/to/matric-result.pdf" download>Download Result</a></p>
+            </div>
+          
+          </section>
+          
 
         <section id="skills" class="skills">
             <h2>Skills</h2>
@@ -114,13 +139,13 @@
             <div class="projects-list">
                 <div class="project-item">
                     <h3>General Store Management System</h3>
-                    <p>A web-based solution developed using MSSQL and Django, designed to streamline inventory, counter,
+                    <p class="project-description">A web-based solution developed using MSSQL and Django, designed to streamline inventory, counter,
                         and administration management.</p>
                     <a href="https://github.com/FawadSaqlain/DBMS-PROJECT" style="color: #a62a2a;">View on GitHub</a>
                 </div>
                 <div class="project-item">
                     <h3>Image Classification using MobileNetV2</h3>
-                    <p>pre-trained MobileNetV2 model in TensorFlow to classify images.
+                    <p class="project-description">pre-trained MobileNetV2 model in TensorFlow to classify images.
                         Check out how this powerful model, trained on the ImageNet dataset,
                         identifies objects in various images. This widely used application of
                         machine learning involves algorithms that analyze digital images by measuring pixel values.
@@ -129,18 +154,16 @@
                 </div>
                 <div class="project-item">
                     <h3>Music recomendation system</h3>
-                    <p>Music Recommendation System 🎵. Inspired by platforms like Spotify, this system uses machine
-                        learning
-                        to analyze user habits, preferences, and patterns, delivering a personalized music experience.
-                        It’s amazing
-                        to see how data transforms into tailored playlists, introducing users to new genres and artists.
+                    <p class="project-description">Music Recommendation System 🎵. Inspired by platforms like Spotify, this system uses machine
+                        learningto analyze user habits, preferences, and patterns, delivering a personalized music experience.
+                        It’s amazing to see how data transforms into tailored playlists, introducing users to new genres and artists.
                     </p>
                     <a href="https://github.com/FawadSaqlain/CodeAlpha_Music-Recommendations-Model"
                         style="color: #a62a2a;">View on GitHub</a>
                 </div>
                 <div class="project-item">
                     <h3>Amazon sales dataset visualizations</h3>
-                    <p>Explore the power of data-driven decision-making with our latest LinkedIn post! Dive into Python
+                    <p class="project-description">Explore the power of data-driven decision-making with our latest LinkedIn post! Dive into Python
                         code
                         snippets and captivating visualizations dissecting an Amazon sales dataset. From tracking sales
                         trends over time to dissecting profit margins by category, our analysis delves deep into the
@@ -159,7 +182,7 @@
                 </div>
                 <div class="project-item">
                     <h3>IMDB dataset visualizations</h3>
-                    <p>The code analyzes a movie dataset (likely IMDB data) using Pandas and Matplotlib in a Google
+                    <p class="project-description">The code analyzes a movie dataset (likely IMDB data) using Pandas and Matplotlib in a Google
                         Colab environment.
                         It explores various aspects of movies such as average ratings by genre, budget versus gross
                         revenue, runtime
@@ -175,21 +198,54 @@
                 </div>
                 <div class="project-item">
                     <h3>Supervised machine learning Algorithms</h3>
-                    <p>Supervised machine learning is a type of artificial intelligence where a model is trained on
+                    <p class="project-description">Supervised machine learning is a type of artificial intelligence where a model is trained on
                         labeled data.
                         This means that the algorithm learns from input-output pairs, where the correct output is
                         provided during training.
                         The goal is for the model to make accurate predictions or decisions when given new, unseen data.
                     </p>
-                    <a href="https://github.com/FawadSaqlain/Supervised-ML-algorithms" style="color: #a62a2a;">View on
+                    <a href="https://github.com/FawadSaqlain/Supervised-ML-algorithms" style="color: #a62a2a; ">View on
                         GitHub</a>
                 </div>
             </div>
         </section>
 
         <!-- Add this to the head section -->
-        
 
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const projectDescriptions = document.querySelectorAll('.project-description');
+                const limit = 400; // Set the text limit for truncating
+    
+                projectDescriptions.forEach(paragraph => {
+                    const text = paragraph.innerHTML;
+    
+                    if (text.length > limit) {
+                        const initialText = text.substring(0, limit);
+                        const remainingText = text.substring(limit);
+    
+                        // Set initial content and add "Learn More" button
+                        paragraph.innerHTML = initialText + 
+                        '<span class="more-text">' + remainingText + '</span>' + 
+                        '<span class="learn-more-btn" onclick="toggleText(event)">Learn More</span>';
+                    }
+                });
+            });
+    
+            function toggleText(event) {
+                const btnText = event.target;
+                const paragraph = btnText.parentElement;
+                const moreText = paragraph.querySelector('.more-text');
+    
+                if (moreText.style.display === "none") {
+                    moreText.style.display = "inline";
+                    btnText.textContent = "Learn Less";
+                } else {
+                    moreText.style.display = "none";
+                    btnText.textContent = "Learn More";
+                }
+            }
+        </script>
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <h2>Contact</h2>
