@@ -100,6 +100,7 @@
 
 .project-item {
     width: 350px;
+    min-height: 500px;
 }
 
 .project-description {
