@@ -30,6 +30,9 @@
             border-radius: 50%;
             animation: zoomIn 1.5s;
             flex-shrink: 0;
+            border-color: #000;
+            border-width: 5px;
+            border-style: solid;
         }
         
         .header-text {
